@@ -4,7 +4,7 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="/src/css/sytle.css" rel="stylesheet">
         <link rel="stylesheet" href="/src/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -13,38 +13,40 @@
         <div class="container">
             <header class="nav">
                 <div class="nav-left">
-                    <div class="logo">
+                    <div class="name-left">
                         Bowser
-                        <span class="logo-highlight">Jr</span>
+                        <span class="name-right">Jr</span>
                     </div>
                 </div>
                 <div class="nav-right">
-                    <ul id="navbar">
-                        <li class="navbar-trigger" href="Home">Home</li>
-                        <li class="navbar-trigger" href="Resume">Resume</li>
-                        <li class="navbar-trigger" href="Services">Services</li>
-                        <li class="navbar-trigger" href="Blog">Blog</li>
-                        <li class="navbar-trigger" href="Contact">Contact</li>
-                    </ul>
+                    <div id="navbar">
+                        <a class="navbar-trigger" href="Home">Home</a>
+                        <a class="navbar-trigger" href="Resume">Resume</a>
+                        <a class="navbar-trigger" href="Services">Services</a>
+                        <a class="navbar-trigger" href="Blog">Blog</a>
+                        <a class="navbar-trigger" href="Contact">Contact</a>
+                    </div>
                 </div> 
             </header>
             <!-- End of nav bar -->
             <div class="pages">
                 <!-- home page -->
-                <section class="subpages" id="home">
-                    <div class="homepage-header">
+                <section class="subpage" id="home">
+                    <div class="homepage-header subpage-header">
                         <img class="homepage-header-avatar" src="/src/assets/imgs/Bowsy.png" alt="Bowsy">
-                        <div class="homepage-header-title">Bowser Jr</div>
-                        <!-- carousel -->
-                        <div class="homepage-header-position">Web Designer</div>
-                        <!-- social media icons -->
-                        <div class="homepage-header-socialLinks">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <div class="homepage-header-info">
+                            <div class="homepage-header-title">Bowser Jr</div>
+                            <!-- carousel -->
+                            <div class="homepage-header-position">Web Designer</div>
+                            <!-- social media icons -->
+                            <div class="homepage-header-socialLinks">
+                                <i class="fa fa-twitter media" aria-hidden="true"></i>
+                                <i class="fa fa-facebook media" aria-hidden="true"></i>
+                                <i class="fa fa-instagram media" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="homepage-content">
+                    <div class="homepage-content subpage-content">
                         <div class="homepage-content_left">
                             <div class="homepage-content-aboutMe">
                                 <h3 class="homepage_about">About</h3>
@@ -73,12 +75,13 @@
                     </div>
                 </section>
                 <!-- End of home page -->
+
                 <!-- Resume page -->
                 <section class="subpages" id="Resume">
-                    <div class="resumepage-header">
-                        <h2 class="resumepage_title">Resume</h2>
+                    <div class="resumepage-header subpage-header">
+                        <h2 class="resumepage_title subpage-title">Resume</h2>
                     </div>
-                    <div class="resumepage-content">
+                    <div class="resumepage-content subpage-content">
                         <div class="row">
                             <div class="col-sm-6 col-md-6 col-lg-6">
                                 <div class="resumepage-block">
@@ -202,10 +205,10 @@
                 <!-- End of resume page -->
                 <!-- Services page -->
                 <section class="subpages" id="Services">
-                    <div class="servicespage-header">
-                        <h2 class="servicespage_title">Services</h2>
+                    <div class="servicespage-header subpage-header">
+                        <h2 class="servicespage_title subpage-title">Services</h2>
                     </div>
-                    <div class="servicespage-content">
+                    <div class="servicespage-content subpage-content">
                         <!-- My Services -->
                         <div class="row">
                             <div class="col-sm-12 col-md-12">
@@ -319,10 +322,10 @@
                 <!-- End of Services page -->
                 <!-- Blog page -->
                 <section class="subpages" id="Blog">
-                    <div class="servicespage-header">
-                        <h2 class="servicespage_title">Blog</h2>
+                    <div class="servicespage-header subpage-header">
+                        <h2 class="servicespage_title subpage-title">Blog</h2>
                     </div>
-                    <div class="servicespage-content"></div>
+                    <div class="servicespage-content subpage-content"></div>
                 </section>
                 <!-- End of Blog page -->
                 <!-- Contact page -->
@@ -434,14 +437,15 @@
                 </a>
             </footer>
             <!-- End of footer -->
+            <script src="/src/js/page.js"></script>
             <script type="text/javascript">
-                var onloadCallback = function() {
-                  alert("grecaptcha is ready!");
-                };
-              </script>
-              <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-              async defer>
-          </script>
+            //     var onloadCallback = function() {
+            //     alert("grecaptcha is ready!");
+            //     };
+            // </script>
+            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+            async defer>
+            </script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         </div>
     </body>
