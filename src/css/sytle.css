@@ -98,13 +98,6 @@
   padding: 20px 0;
 }
 
-.pages .page--actice {
-  display: block;
-  position: relative;
-  visibility: visible;
-  opacity: 1;
-}
-
 .pages .page {
   top: 0;
   left: 0;

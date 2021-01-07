@@ -8,6 +8,7 @@
         <link href="/src/assets/css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="/src/css/sytle.css" rel="stylesheet">
         <title>Bowsy</title>
+        <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
     </head>
     <body>
         <!-- Pages -->
@@ -26,7 +27,7 @@
                             <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav" id="navMenu">
+                            <div class="navbar-nav nav-jump" id="navMenu">
                                 <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                                 <a class="nav-link" href="#Resume">Resume</a>
                                 <a class="nav-link" href="#Services">Services</a>
@@ -43,7 +44,7 @@
                 <div class="container pages">
 
                     <!-- Home -->
-                    <section id="home" class="page">
+                    <section id="home" class="page" style="display: block;">
                         <div class="home-header page-header">
                                 <img class="home-avatar" src="/src/assets/imgs/Bowsy.png" alt="Bowsy">
                                 <div class="home-info"> 
@@ -99,7 +100,7 @@
                     <!-- End of Home -->
 
                     <!-- Resume -->
-                    <section id="resume" class="page">
+                    <section id="resume" class="page" style="display: none;">
                         <div class="resume-header page-header">
                                 <h2 class="header-title">Resume</h2>
                         </div>
@@ -245,7 +246,7 @@
                     <!-- End of Resume -->
 
                     <!-- Services -->
-                    <section id="services" class="pages">
+                    <section id="services" class="pages" style="display: none;">
                         <div class="services-header page-header">
                         <h2 class="services_title header-title">Services</h2>
                         </div>
@@ -363,12 +364,12 @@
                     <!-- End of Services -->
 
                     <!-- Blog page-->
-                    <section id="blog">
+                    <section id="blog" class="pages" style="display: none;">
                     </section>
                     <!-- End of Blog -->
 
                     <!-- Contact page -->
-                    <section id="contact" class="page">
+                    <section id="contact" class="page" style="display: none;">
                         <div class="contact-header page-header">
                         <h2 class="contact_title header-title">Contact</h2>
                         </div>
@@ -491,6 +492,7 @@
             </div>
         </div>
         <!-- End of All Pages -->
+
         <script src="/src/js/page.js"></script>
         <!-- <script src="jquery.min.js"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

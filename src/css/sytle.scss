@@ -25,6 +25,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 32px 64px; 
+  
 }
 
 .page-content{
@@ -83,16 +84,24 @@
     }
 }
 
+.nav-jump{
+    
+
+    a{
+
+    }
+}
+
 .pages{
     position: relative;
     padding: 20px 0;
 
-    .page--actice{
-        display: block;
-        position: relative;
-        visibility: visible;
-        opacity: 1;
-    }
+    // .page--actice{
+    //     display: block;
+    //     position: relative;
+    //     visibility: visible;
+    //     opacity: 1;
+    // }
 
     .page{
          //display: none;
@@ -447,4 +456,5 @@
         }
     }
 }
+
 
