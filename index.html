@@ -1,216 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="/src/css/sytle.css" rel="stylesheet">
-        <link rel="stylesheet" href="/src/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="/src/assets/css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/src/css/sytle.css" rel="stylesheet">
+        <title>Bowsy</title>
     </head>
     <body>
-        <div class="container">
-            <header class="nav">
-                <div class="nav-left">
-                    <div class="name-left">
-                        Bowser
-                        <span class="name-right">Jr</span>
-                    </div>
-                </div>
-                <div class="nav-right">
-                    <div id="navbar">
-                        <a class="navbar-trigger" href="Home">Home</a>
-                        <a class="navbar-trigger" href="Resume">Resume</a>
-                        <a class="navbar-trigger" href="Services">Services</a>
-                        <a class="navbar-trigger" href="Blog">Blog</a>
-                        <a class="navbar-trigger" href="Contact">Contact</a>
-                    </div>
-                </div> 
-            </header>
-            <!-- End of nav bar -->
-            <div class="pages">
-                <!-- home page -->
-                <section class="subpage" id="home">
-                    <div class="homepage-header subpage-header">
-                        <img class="homepage-header-avatar" src="/src/assets/imgs/Bowsy.png" alt="Bowsy">
-                        <div class="homepage-header-info">
-                            <div class="homepage-header-title">Bowser Jr</div>
-                            <!-- carousel -->
-                            <div class="homepage-header-position">Web Designer</div>
-                            <!-- social media icons -->
-                            <div class="homepage-header-socialLinks">
-                                <i class="fa fa-twitter media" aria-hidden="true"></i>
-                                <i class="fa fa-facebook media" aria-hidden="true"></i>
-                                <i class="fa fa-instagram media" aria-hidden="true"></i>
+        <!-- Pages -->
+        <div class="main">
+            <div class="container">
+                <!-- Header -->
+                <header class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                            <h1 class="navbar-brand">
+                                John
+                                <span>Doe</span>
+                            </h1>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav" id="navMenu">
+                                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                                <a class="nav-link" href="#Resume">Resume</a>
+                                <a class="nav-link" href="#Services">Services</a>
+                                <a class="nav-link" href="#Blog">Blog</a>
+                                <a class="nav-link" href="#Contact">Contact</a>
+                            </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="homepage-content subpage-content">
-                        <div class="homepage-content_left">
-                            <div class="homepage-content-aboutMe">
-                                <h3 class="homepage_about">About</h3>
-                                <span class="homepage_me">Me</span>
-                            </div>
-                            <div class="homepage-content-aboutMeContemt">
-                                <p>Bowser Jr. made his debut in Super Mario Sunshine and has since helped his father to kidnap Princess Peach and battle Mario and Luigi in many subsequent games. Bowser Jr. has also taken on playable roles in spin-off titles such as Mario Superstar Baseball and Mario Strikers Charged. </p>
-                            </div>
-                        </div>
-                        <div class="homepage-content_right">
-                            <div class="homepage_info">
-                                <dl class="info-list">
-                                    <dt>Age</dt>
-                                    <dd>20</dd>
-                                    <dt>Residence</dt>
-                                    <dd>Australia</dd>
-                                    <dt>Address</dt>
-                                    <dd>105 Batman St,West Melbourne</dd>
-                                    <dt>e-mail</dt>
-                                    <dd>bowser@gmail.com</dd>
-                                    <dt>Phone</dt>
-                                    <dd>+0123 123 456 789</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End of home page -->
+                    </nav>
+                </header>
+                <!-- End of Header -->
+                <!--//////////////////////////////////////////////////////////////////////////////////-->
+                <!-- Pages -->               
+                <div class="container pages">
 
-                <!-- Resume page -->
-                <section class="subpages" id="Resume">
-                    <div class="resumepage-header subpage-header">
-                        <h2 class="resumepage_title subpage-title">Resume</h2>
-                    </div>
-                    <div class="resumepage-content subpage-content">
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6">
-                                <div class="resumepage-block">
-                                    <div class="block-title"></div>
-                                    <div class="block-timeline">
-                                        <!-- Education 1 -->
-                                        <div class="timeline-item">
-                                            <h5 class="item-title">Specialization Course</h5>
-                                            <span class="item-period">2010</span>
-                                            <span class="item-company">Apple Inc.</span>
-                                            <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                    <!-- Home -->
+                    <section id="home" class="page">
+                        <div class="home-header page-header">
+                                <img class="home-avatar" src="/src/assets/imgs/Bowsy.png" alt="Bowsy">
+                                <div class="home-info"> 
+                                    <div class="home-title">Bowser Jr</div>
+                                    <!-- carousel -->
+                                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="carousel-text">Web Designer</div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="carousel-text">Frontend-developer</div>
+                                            </div>
                                         </div>
-                                        <!-- Education 2 -->
-                                        <div class="timeline-item">
-                                            <h5 class="item-title">Specialization Course</h5>
-                                            <span class="item-period">2010</span>
-                                            <span class="item-company">Apple Inc.</span>
-                                            <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    </div>
+                                    <!-- social media icons -->
+                                    <div class="home-socialLinks">
+                                        <i class="fa fa-twitter media" aria-hidden="true"></i>
+                                        <i class="fa fa-facebook media" aria-hidden="true"></i>
+                                        <i class="fa fa-instagram media" aria-hidden="true"></i>
+                                    </div> 
+                                </div>
+                        </div>
+                        <div class="home-content page-content">
+                                <div class="home-content_left">
+                                    <div class="home-content-aboutMe">
+                                        <h3 class="home_about">About
+                                            <span class="home_me">Me</span>
+                                        </h3>                                       
+                                    </div>
+                                    <div class="home-content-aboutMeContemt">
+                                        <p>Bowser Jr. made his debut in Super Mario Sunshine and has since helped his father to kidnap Princess Peach and battle Mario and Luigi in many subsequent games. Bowser Jr. has also taken on playable roles in spin-off titles such as Mario Superstar Baseball and Mario Strikers Charged. </p>
+                                    </div>
+                                </div>
+                                <div class="home-content_right">
+                                    <div class="home_info">
+                                        <dl class="dl-horizontal">
+                                            <dt>Age</dt>
+                                            <dd>20</dd>
+                                            <dt>Residence</dt>
+                                            <dd>Australia</dd>
+                                            <dt>Address</dt>
+                                            <dd>105 Batman St,West Melbourne</dd>
+                                            <dt>e-mail</dt>
+                                            <dd class="email">bowser@gmail.com</dd>
+                                            <dt>Phone</dt>
+                                            <dd>+0123 123 456 789</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                        </div>
+                    </section>
+                    <!-- End of Home -->
+
+                    <!-- Resume -->
+                    <section id="resume" class="page">
+                        <div class="resume-header page-header">
+                                <h2 class="header-title">Resume</h2>
+                        </div>
+                        <div class="resume-content page-content">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="blcok">
+                                            <div class="block-title">
+                                                <h3>Education</h3>
+                                            </div>
+                                            <div class="block-timeline">
+                                                <!-- Education 1 -->
+                                                <div class="timeline-item">
+                                                    <h5 class="item-title">Specialization Course</h5>
+                                                    <span class="item-period">2010</span>
+                                                    <span class="item-company">Apple Inc.</span>
+                                                    <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                                </div>
+                                                <!-- Education 2 -->
+                                                <div class="timeline-item">
+                                                    <h5 class="item-title">Specialization Course</h5>
+                                                    <span class="item-period">2010</span>
+                                                    <span class="item-company">Apple Inc.</span>
+                                                    <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                                </div>
+                                                <!-- Education 3 -->
+                                                <div class="timeline-item">
+                                                    <h5 class="item-title">Specialization Course</h5>
+                                                    <span class="item-period">2010</span>
+                                                    <span class="item-company">Apple Inc.</span>
+                                                    <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <!-- Education 3 -->
-                                        <div class="timeline-item">
-                                            <h5 class="item-title">Specialization Course</h5>
-                                            <span class="item-period">2010</span>
-                                            <span class="item-company">Apple Inc.</span>
-                                            <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="blcok">
+                                            <div class="block-title">
+                                                <h3>Experience</h3>
+                                            </div>
+                                            <div class="block-timeline">
+                                                <!-- Experience 1 -->
+                                                <div class="timeline-item">
+                                                    <h5 class="item-title">Frontend-developer</h5>
+                                                    <span class="item-period">Dec 2012 - Current</span>
+                                                    <span class="item-company">Web Agency</span>
+                                                    <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                                </div>
+                                                <!-- Experience 2 -->
+                                                <div class="timeline-item">
+                                                    <h5 class="item-title">Frontend-developer</h5>
+                                                    <span class="item-period">Dec 2012 - Current</span>
+                                                    <span class="item-company">Web Agency</span>
+                                                    <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                                </div>
+                                                <!-- Experience 3 -->
+                                                <div class="timeline-item">
+                                                    <h5 class="item-title">Frontend-developer</h5>
+                                                    <span class="item-period">Dec 2012 - Current</span>
+                                                    <span class="item-company">Web Agency</span>
+                                                    <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6">
-                                <div class="resumepage-block">
-                                    <div class="block-title">
-                                        <h4>Education</h4>
-                                    </div>
-                                    <div class="block-timeline">
-                                        <!-- Experience 1 -->
-                                        <div class="timeline-item">
-                                            <h5 class="item-title">Frontend-developer</h5>
-                                            <span class="item-period">Dec 2012 - Current</span>
-                                            <span class="item-company">Web Agency</span>
-                                            <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                                        </div>
-                                        <!-- Experience 2 -->
-                                        <div class="timeline-item">
-                                            <h5 class="item-title">Frontend-developer</h5>
-                                            <span class="item-period">Dec 2012 - Current</span>
-                                            <span class="item-company">Web Agency</span>
-                                            <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                                        </div>
-                                        <!-- Experience 3 -->
-                                        <div class="timeline-item">
-                                            <h5 class="item-title">Frontend-developer</h5>
-                                            <span class="item-period">Dec 2012 - Current</span>
-                                            <span class="item-company">Web Agency</span>
-                                            <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6">
-                                <div class="resumepage-block">
-                                    <div class="block-title">
-                                        <h4>Design
-                                            <span>Skills</span>
-                                        </h4>
-                                    </div>
-                                    <div class="block-skill">
-                                        <!-- skill one -->
-                                        <h5>Web Desigin</h5>
-                                        <div class="skill-carousel">
-                                            <div class="skill-percentage skill-1"></div>
-                                        </div>
-                                        <!-- skill two -->
-                                        <h5>Graphic Desigin</h5>
-                                        <div class="skill-carousel">
-                                            <div class="skill-percentage skill-2"></div>
-                                        </div>
-                                        <!-- skill three -->
-                                        <h5>Print Desigin</h5>
-                                        <div class="skill-carousel">
-                                            <div class="skill-percentage skill-3"></div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="blcok">
+                                            <div class="block-title">
+                                                <h3>
+                                                    Design
+                                                    <span>Skills</span>
+                                                </h3>
+                                            </div>
+                                            <div class="block-skill">
+                                                <!-- skill one -->
+                                                <h5>Web Desigin</h5>
+                                                <div class="progress" style="height: 12px">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 88%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <!-- <div class="skill-animation">
+                                                    <div class="skill-percentage skill-1"></div>
+                                                </div> -->
+                                                <!-- skill two -->
+                                                <h5>Graphic Desigin</h5>
+                                                <div class="progress" style="height: 12px">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <!-- <div class="skill-animation">
+                                                    <div class="skill-percentage skill-2"></div>
+                                                </div> -->
+                                                <!-- skill three -->
+                                                <h5>Print Desigin</h5>
+                                                <div class="progress" style="height: 12px">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <!-- <div class="skill-animation">
+                                                    <div class="skill-percentage skill-3"></div>
+                                                </div> -->
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6">
-                                <div class="resumepage-block">
-                                    <div class="block-title">
-                                        <h4>Coding
-                                            <span>Skills</span>
-                                        </h4>
-                                    </div>
-                                    <div class="block-skill">
-                                        <!-- skill four -->
-                                        <h5>HTML5</h5>
-                                        <div class="skill-carousel">
-                                            <div class="skill-percentage skill-4"></div>
-                                        </div>
-                                        <!-- skill five -->
-                                        <h5>CSS3/LESS/SASS</h5>
-                                        <div class="skill-carousel">
-                                            <div class="skill-percentage skill-5"></div>
-                                        </div>
-                                        <!-- skill six -->
-                                        <h5>JavaScript(ES6, Vanilla)</h5>
-                                        <div class="skill-carousel">
-                                            <div class="skill-percentage skill-6"></div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="blcok">
+                                            <div class="block-title">
+                                                <h3>
+                                                    Coding
+                                                    <span>Skills</span>
+                                                </h3>
+                                            </div>
+                                            <div class="block-skill">
+                                                <!-- skill four -->
+                                                <h5>HTML5</h5>
+                                                <div class="progress" style="height: 12px">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <!-- <div class="skill-animation">
+                                                    <div class="skill-percentage skill-4"></div>
+                                                </div> -->
+                                                <!-- skill five -->
+                                                <h5>CSS3/LESS/SASS</h5>
+                                                <div class="progress" style="height: 12px">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <!-- <div class="skill-animation">
+                                                    <div class="skill-percentage skill-5"></div>
+                                                </div> -->
+                                                <!-- skill six -->
+                                                <h5>JavaScript(ES6, Vanilla)</h5>
+                                                <div class="progress" style="height: 12px">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <!-- <div class="skill-animation">
+                                                    <div class="skill-percentage skill-6"></div>
+                                                </div> -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
-                    </div>
-                </section>
-                <!-- End of resume page -->
-                <!-- Services page -->
-                <section class="subpages" id="Services">
-                    <div class="servicespage-header subpage-header">
-                        <h2 class="servicespage_title subpage-title">Services</h2>
-                    </div>
-                    <div class="servicespage-content subpage-content">
-                        <!-- My Services -->
-                        <div class="row">
+                    </section>
+                    <!-- End of Resume -->
+
+                    <!-- Services -->
+                    <section id="services" class="pages">
+                        <div class="services-header page-header">
+                        <h2 class="services_title header-title">Services</h2>
+                        </div>
+                        <div class="services-content page-content">
+                            <!-- My Services -->
+                            <div class="row">
                             <div class="col-sm-12 col-md-12">
                                 <div class="block-title">
                                     <h4>My
@@ -266,9 +307,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Clients -->
-                        <div class="row">
+                            </div>
+                            <!-- Clients -->
+                            <div class="row">
                             <div class="col-sm-12 col-md-12">
                                 <div class="block-title">
                                     <h4>Clients</h4>
@@ -315,37 +356,35 @@
                                         </a>
                                     </div>
                                 </div>
+                        </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- End of Services page -->
-                <!-- Blog page -->
-                <section class="subpages" id="Blog">
-                    <div class="servicespage-header subpage-header">
-                        <h2 class="servicespage_title subpage-title">Blog</h2>
-                    </div>
-                    <div class="servicespage-content subpage-content"></div>
-                </section>
-                <!-- End of Blog page -->
-                <!-- Contact page -->
-                <section class="subpages" id="Contact">
-                    <div class="servicespage-header">
-                        <h2 class="servicespage_title">Contact</h2>
-                    </div>
-                    <div class="servicespage-content">
+                    </section> 
+                    <!-- End of Services -->
+
+                    <!-- Blog page-->
+                    <section id="blog">
+                    </section>
+                    <!-- End of Blog -->
+
+                    <!-- Contact page -->
+                    <section id="contact" class="page">
+                        <div class="contact-header page-header">
+                        <h2 class="contact_title header-title">Contact</h2>
+                        </div>
+                        <div class="contact-content page-content">
                         <div class="row">
-                            <div class="col-sm-6 col-md-6">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
                                 <div class="block-title">
-                                    <h4>
+                                    <h3>
                                         Get in
                                         <span>Touch</span>
-                                    </h4>
+                                    </h3>
                                 </div>
                                 <!-- Google Map -->
-                                <!-- <div class="map" id="map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d9186.166483581943!2d144.9498431484743!3d-37.81356970788266!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1609805597103!5m2!1sen!2sau" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                </div> -->
+                                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 100px">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d9186.166483581943!2d144.9498431484743!3d-37.81356970788266!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1609805597103!5m2!1sen!2sau" frameborder="0"style="border:0" allowfullscreen></iframe>
+                                </div>
                                 <!-- End of Google Map -->
                                 <div class="contact-info">
                                     <div class="info-icon">
@@ -380,12 +419,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-6">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
                                 <div class="block-title">
-                                    <h4>
+                                    <h3>
                                         Contact
                                         <span>Form</span>
-                                    </h4>
+                                    </h3>
                                 </div>
                                 <form id="contact-form" action="contact_form" method="POST">
                                     <div class="col g-3 align-items-center">
@@ -419,34 +458,42 @@
                                                 <input type="message" id="inputmessage" class="form-control" placeholder="Message for Me" data-error="Please,leave me a message">
                                             </div>
                                         </div>
-                                        
+                                        <div class="row mb-3 align-items-center">
+                                            <div class="col-12">
+                                                <div class="g-recaptcha" data-sitekey="6LdYIiEaAAAAAKbMMwQkreKB442oLEKNx0LiqN2D"></div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="row mb-3 align-items-center">
+                                            <div class="col-12">
+                                                <button class="btn btn-success" type="submit">Send Message</button></div>
+                                        </div>
                                     </div>
-                                    <div class="g-recaptcha" data-sitekey="6LdYIiEaAAAAAKbMMwQkreKB442oLEKNx0LiqN2D"></div>
-                                    <input type="submit" class="button btn-send disable" value="Send Message">
                                 </form>
-                            </div>
+                            </div>        
                         </div>
-                    </div>
-                </section>
-            </div>
-            <!-- End of page -->
-            <footer class="copyright">
+                        </div>
+                    </section>
+                    <!-- End of Contact -->
+                </div>
+                <!-- End of Pages -->
+                <!--//////////////////////////////////////////////////////////////////////////////////-->
+                <!-- Footer -->
+                <footer class="container">
+            <div class="text-center">
                 © 2021 All rights reserved. Designed by 
-                <a href="">
-                    <span>OwO</span>
-                </a>
-            </footer>
-            <!-- End of footer -->
-            <script src="/src/js/page.js"></script>
-            <script type="text/javascript">
-            //     var onloadCallback = function() {
-            //     alert("grecaptcha is ready!");
-            //     };
-            // </script>
-            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-            async defer>
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <a href="">
+            <span>OwO</span>
+        </a>
+            </div>
+                </footer>
+                <!-- End of Footer -->
+            </div>
         </div>
+        <!-- End of All Pages -->
+        <script src="/src/js/page.js"></script>
+        <!-- <script src="jquery.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
     </body>
 </html>

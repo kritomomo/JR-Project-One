@@ -6,7 +6,7 @@ function createNav() {
     changeNavItem();
 
     document
-    .querySelectorAll('.navbar-trigger')
+    .querySelectorAll('.navbar-link')
     .forEach(function(element) {
         element.onclick = function(event) {
             event.preventDefault();
@@ -37,7 +37,7 @@ function changePage() {
 }
 
 function changeNavItem() {
-    var className = 'navbar-trigger--active';
+    var className = 'navbar-link--active';
 
     if (previous) {
         var previousNavItem = document.querySelector('[href="'+ previous +'"]');
