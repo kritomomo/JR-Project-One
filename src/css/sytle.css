@@ -16,7 +16,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: whitesmoke;
-  background-image: url(/src/assets/imgs/bg.png);
+  background-image: url(src/assets/imgs/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@
 .page-header {
   background-color: #2eca7f;
   color: white;
-  background-image: url(/src/assets/imgs/bg.png);
+  background-image: url(src/assets/imgs/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-top-left-radius: 20px;
